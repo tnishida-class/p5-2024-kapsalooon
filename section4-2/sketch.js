@@ -17,13 +17,14 @@ function draw(){
     b.x += b.vx;
     b.y += b.vy;
   }
-}
 
-function mouseDragged(){
-  const dx = mouseX - pmouseX;
-  const dy = mouseY - pmouseY;
+　 const x = random(0, windowWidth);
+  const y = random(0, windowHeight);
+  const dx = random(-100, 100);
+  const dy = random(-100, 100);
+  const br = random(20, 100);
   if(mag(dx, dy) > 5){
-    const b = { x: mouseX, y: mouseY, size: 20, vx: dx, vy: dy };
+    const b = { x, y, size: br, vx: dx, vy: dy };
     balls.push(b);
   }
 }

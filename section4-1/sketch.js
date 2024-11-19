@@ -25,7 +25,7 @@ console.log(average);
 
  largest = 0;
  for(let i = 0; i < scores.length; i++){
-  if (largest , scores[i]){
+  if (largest < scores[i]){
     largest = scores[i];
   }
    // BLANK[2]　ヒント：今までの最大値 largest と scores[i] を比較する
